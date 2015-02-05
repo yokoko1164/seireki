@@ -12,7 +12,9 @@ end
 
 p "西暦"
 y = gets.to_i
+p "月:"
 m = gets.to_i
+p "日:"
 d = gets.to_i
 h = calculation(y,m,d)
 
