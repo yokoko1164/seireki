@@ -20,7 +20,7 @@ when 5
 	p "木曜日"
 when 6
 	p "金曜日"
-when 7
+when 0
 	p "土曜日"
 else
 	p "error"
