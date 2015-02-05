@@ -1,5 +1,13 @@
 def calculation (y, m, d)
-  result = (y + (y/4) - (y/100) + y/400 + (13*m+8)/5 + d) % 7
+  if m <= 2
+    m += 12; y -= 1
+  end
+
+  j = (y / 100).ceil
+  k = y % 100
+
+  result = (d + (((m + 1) * 26) / 10).ceil + k + (k / 4).ceil + (j / 4).ceil + 5 * j) % 7
+
 end
 
 y = gets.to_i
