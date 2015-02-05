@@ -1,7 +1,7 @@
 y = gets.to_i
 m = gets.to_i
 d = gets.to_i
-# h = calculation(y,m,d)
+h = calculation(y,m,d)
 
 case h
 when 1
@@ -20,4 +20,8 @@ when 7
 	p "土曜日"
 else
 	p "error"
+end
+
+def calculation (y, m, d)
+  result = (y + (y/4) - (y/100) + y/400 + (13*m+8)/5 + d) % 7
 end
