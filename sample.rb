@@ -10,6 +10,7 @@ def calculation (y, m, d)
 
 end
 
+p "西暦"
 y = gets.to_i
 m = gets.to_i
 d = gets.to_i
